@@ -1,0 +1,15 @@
+# homework_lifeQualityProject
+num_cad = int(input("Insira o número de pessoas que irão passar por esta avaliação: "))
+
+for test in range(num_cad):
+ water = int(input("Sua rua tem abastecimento de água potável? (Independente de ser poço ou rede geral de distribuição) \n 1 = Sim \n 2 = Não \n R: "))
+ cleaning = int(input("Sua rua tem limpeza urbada? \n 1 = Sim \n 2 = Não \n R: "))
+ cleaning2 = int(input("Sua rua tem drenagem urbana e manejo de resíduos? \n 1 = Sim \n 2 = Não \n R: "))
+ street = int(input("Sua rua é asfaltada? \n 1 = Sim \n 2 = Não \n R: "))
+ deliver = int(input("Os Correios ou qualquer outro serviço de entrega atuam ativamente em seu endereço? \n 1 = Sim \n 2 = Não \n R: "))
+ if water == 1 and cleaning == 1 and cleaning2 == 1 and street == 1 and deliver == 1:
+	 num_cad = +1
+ print("A quantidade de pessoas em vulnerabilidade social que participaram dessa pesquisa é: {}".format(num_cad))
+else:
+ print("Nenhum dos participantes desta pesquisa está em situação de vulnerabilidade social.")
+ print("A quantidade total de pessoas em vulnerabilidade social que participaram dessa pesquisa é: {}".format(num_cad))
